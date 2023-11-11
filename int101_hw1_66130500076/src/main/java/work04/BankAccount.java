@@ -16,30 +16,37 @@ public class BankAccount {
     public Person getOwner() {
         return owner;
     }
+
     public double getBalance() {
         return balance;
     }
 
     // deposit method
-    public double deposit(double amount){
+    public double deposit(double amount) {
         balance += amount;
         return balance;
     }
 
     // withdraw method
-    public double withdraw(double amount){
+    public double withdraw(double amount) {
         balance -= amount;
         return balance;
     }
 
     // transfer method
-    public void transfer(double amount, BankAccount account){
+    public void transfer(double amount, BankAccount account) {
         withdraw(amount);
         account.deposit(amount);
     }
 
     @Override
     public String toString() {
-        return "BankAccount{" + "number=" + number + ", owner=" + owner + ", balance=" + balance + '}';
+        return "BankAccount{" +
+                "number=" + number +
+                ", owner=" + owner +
+                ", balance=" + balance +
+                '}';
     }
+
+    
 }

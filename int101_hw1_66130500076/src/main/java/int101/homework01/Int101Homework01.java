@@ -14,12 +14,14 @@ public class Int101Homework01 {
         work03UseOfUtilityClass();
         work04UseOfObjectClass();
     }
+
     static void work01Question(boolean b1, boolean b2, boolean b3,
                                boolean b4, boolean b5, boolean b6) {
         // do nothing in this method; do your work in work01Question()
         boolean b = ((b1 ^ (b2 | b3)) && b4) || (b5 & b6);
         System.out.println("Work01:Question: b = " + b);
     }
+
     static void work01Answer(boolean b1, boolean b2, boolean b3,
                              boolean b4, boolean b5, boolean b6) {
         // remove () as many as possible from the following expression
@@ -28,11 +30,13 @@ public class Int101Homework01 {
         boolean b = b1 ^ b2 | b3 && b4 || b5 & b6;
         System.out.println("Work01:Answer: b = " + b);
     }
+
     static void work02Question(int v1, int v2, int v3, int v4, int v5, int v6) {
         // do nothing in this method; do your work in work02Question()
         boolean b = ((v1 << v2) < v3) != (v3 > ((v4 ^ v5) | v6));
         System.out.println("Work02:Question: b = " + b);
     }
+
     static void work02Answer(int v1, int v2, int v3, int v4, int v5, int v6) {
         // remove () as many as possible from the following expression
         // but do not change the meaning of the expression;
